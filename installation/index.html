@@ -65,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resourceful-installation" class="md-skip">
+        <a href="#importable-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -249,43 +249,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choosing-where-to-install-resourceful" class="md-nav__link">
-    Choosing Where To Install Resourceful
+  <a href="#choosing-where-to-install-importable" class="md-nav__link">
+    Choosing Where To Install Importable
   </a>
-  
-    <nav class="md-nav" aria-label="Choosing Where To Install Resourceful">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#understanding-the-resourceful-search-path" class="md-nav__link">
-    Understanding The Resourceful Search Path
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#choosing-how-to-install-resourceful" class="md-nav__link">
-    Choosing How To Install Resourceful
+  <a href="#choosing-how-to-install-importable" class="md-nav__link">
+    Choosing How To Install Importable
   </a>
   
-    <nav class="md-nav" aria-label="Choosing How To Install Resourceful">
+    <nav class="md-nav" aria-label="Choosing How To Install Importable">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#loading-a-resourceful-model-file-into-roblox-studio" class="md-nav__link">
-    Loading A Resourceful Model File Into Roblox Studio
+  <a href="#loading-an-importable-model-file-into-roblox-studio" class="md-nav__link">
+    Loading An Importable Model File Into Roblox Studio
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-a-developer-tool-to-synchronize-resourceful" class="md-nav__link">
-    Using A Developer Tool To Synchronize Resourceful
+  <a href="#using-a-developer-tool-to-synchronize-importable" class="md-nav__link">
+    Using A Developer Tool To Synchronize Importable
   </a>
   
 </li>
@@ -405,43 +392,30 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choosing-where-to-install-resourceful" class="md-nav__link">
-    Choosing Where To Install Resourceful
+  <a href="#choosing-where-to-install-importable" class="md-nav__link">
+    Choosing Where To Install Importable
   </a>
-  
-    <nav class="md-nav" aria-label="Choosing Where To Install Resourceful">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#understanding-the-resourceful-search-path" class="md-nav__link">
-    Understanding The Resourceful Search Path
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#choosing-how-to-install-resourceful" class="md-nav__link">
-    Choosing How To Install Resourceful
+  <a href="#choosing-how-to-install-importable" class="md-nav__link">
+    Choosing How To Install Importable
   </a>
   
-    <nav class="md-nav" aria-label="Choosing How To Install Resourceful">
+    <nav class="md-nav" aria-label="Choosing How To Install Importable">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#loading-a-resourceful-model-file-into-roblox-studio" class="md-nav__link">
-    Loading A Resourceful Model File Into Roblox Studio
+  <a href="#loading-an-importable-model-file-into-roblox-studio" class="md-nav__link">
+    Loading An Importable Model File Into Roblox Studio
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#using-a-developer-tool-to-synchronize-resourceful" class="md-nav__link">
-    Using A Developer Tool To Synchronize Resourceful
+  <a href="#using-a-developer-tool-to-synchronize-importable" class="md-nav__link">
+    Using A Developer Tool To Synchronize Importable
   </a>
   
 </li>
@@ -475,63 +449,46 @@
                   </a>
                 
                 
-                <h1 id="resourceful-installation">Resourceful: Installation<a class="headerlink" href="#resourceful-installation" title="Permanent link">&para;</a></h1>
-<h2 id="choosing-where-to-install-resourceful">Choosing Where To Install Resourceful<a class="headerlink" href="#choosing-where-to-install-resourceful" title="Permanent link">&para;</a></h2>
-<p>Within a Roblox Studio project, Resourceful can be installed to a single,
+                <h1 id="importable-installation">Importable: Installation<a class="headerlink" href="#importable-installation" title="Permanent link">&para;</a></h1>
+<h2 id="choosing-where-to-install-importable">Choosing Where To Install Importable<a class="headerlink" href="#choosing-where-to-install-importable" title="Permanent link">&para;</a></h2>
+<p>Within a Roblox Studio project, Importable can be installed to a single,
 shared location where it can be accessed by all project modules that will use
 it.  Conversely, it can also be installed as a child within each module that
 will use it.</p>
-<p>Installing Resourceful to a shared location can ensure that a single, known
-version of Resourceful is used across all modules, while also reducing the
+<p>Installing Importable to a shared location can ensure that a single, known
+version of Importable is used across all modules, while also reducing the
 file size of the Roblox project.</p>
-<p>Installing Resourceful as a child within each module that uses Resourceful may
+<p>Installing Importable as a child within each module that uses Importable may
 help simplify the sharing of such modules with other projects, which can be
 useful for module libraries.</p>
-<h3 id="understanding-the-resourceful-search-path">Understanding The Resourceful Search Path<a class="headerlink" href="#understanding-the-resourceful-search-path" title="Permanent link">&para;</a></h3>
-<p>When invoking Resourceful with default behavior, Resourceful will
-<a href="../api-reference/#automatic-resource-acquisition" title="API Reference: Automatic Resource Acquisition">automatically search for resources</a>
-in the parent <code>Instance</code> that contains Resourceful.</p>
-<p>Thus, if Resourceful is installed to a shared location, invoking that instance
-of Resourceful with default behavior will search for resources within that
-shared location.</p>
-<p>If Resourceful is installed as a child within a module, invoking that instance
-of Resourceful with default behavior will search for resources within that
-module.</p>
-<p>Installing Resourceful to multiple modules would allow each such module to
-search itself when acquiring resources.</p>
-<p>Each invocation of Resourceful can also be configured with
-<a href="../api-reference/#config-property-search" title="API Reference: config Property: search">custom search paths</a> that are as simple or complex
-as needed.  This can allow every module within a project to use a shared
-instance of Resourceful, while also allowing each module to find the specific
-resources it needs.</p>
-<h2 id="choosing-how-to-install-resourceful">Choosing How To Install Resourceful<a class="headerlink" href="#choosing-how-to-install-resourceful" title="Permanent link">&para;</a></h2>
-<p>Resourceful can be installed by loading a Resourceful model file into Roblox
-Studio, or by using a developer tool to synchronize Resourceful's source code
+<h2 id="choosing-how-to-install-importable">Choosing How To Install Importable<a class="headerlink" href="#choosing-how-to-install-importable" title="Permanent link">&para;</a></h2>
+<p>Importable can be installed by loading an Importable model file into Roblox
+Studio, or by using a developer tool to synchronize Importable's source code
 into a Roblox Studio project.</p>
-<h3 id="loading-a-resourceful-model-file-into-roblox-studio">Loading A Resourceful Model File Into Roblox Studio<a class="headerlink" href="#loading-a-resourceful-model-file-into-roblox-studio" title="Permanent link">&para;</a></h3>
+<h3 id="loading-an-importable-model-file-into-roblox-studio">Loading An Importable Model File Into Roblox Studio<a class="headerlink" href="#loading-an-importable-model-file-into-roblox-studio" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Obtain the latest version of <code>Resourceful.rbxmx</code> from the
-<a href="https://github.com/BetterThanReal/Resourceful/releases" title="GitHub: Resourceful Releases">GitHub Release Page</a></li>
+<li>Obtain the latest version of <code>Importable.rbxmx</code> from the
+<a href="https://github.com/BetterThanReal/Importable/releases" title="GitHub: Importable Releases">GitHub Release Page</a></li>
 <li>Insert the model into the chosen parent object(s) within a Roblox Studio
 project</li>
 </ol>
-<h3 id="using-a-developer-tool-to-synchronize-resourceful">Using A Developer Tool To Synchronize Resourceful<a class="headerlink" href="#using-a-developer-tool-to-synchronize-resourceful" title="Permanent link">&para;</a></h3>
+<h3 id="using-a-developer-tool-to-synchronize-importable">Using A Developer Tool To Synchronize Importable<a class="headerlink" href="#using-a-developer-tool-to-synchronize-importable" title="Permanent link">&para;</a></h3>
 <p>Developers who use tools such as <a href="https://rojo.space/">Rojo</a> or
-<a href="https://github.com/rojo-rbx/remodel">Remodel</a> can copy the Resourceful source
+<a href="https://github.com/rojo-rbx/remodel">Remodel</a> can copy the Importable source
 code to the appropriate location(s):</p>
 <ol>
-<li><a href="https://github.com/BetterThanReal/Resourceful/releases" title="GitHub: Resourceful Releases">Download</a> or
-<a href="https://github.com/BetterThanReal/Resourceful">clone</a> the source code for
-Resourceful into a local directory</li>
-<li>Copy or synchronize the <code>src/Resourceful</code> folder into a Roblox Studio
+<li><a href="https://github.com/BetterThanReal/Importable/releases" title="GitHub: Importable Releases">Download</a> or
+<a href="https://github.com/BetterThanReal/Importable">clone</a> the source code for
+Importable into a local directory</li>
+<li>Copy or synchronize the <code>src/Importable</code> folder into a Roblox Studio
 project at the appropriate location(s).  Ensure that the new <code>Instance</code>
-containing Resourceful is named <code>Resourceful</code>.</li>
+containing Importable is named <code>Importable</code>.</li>
 </ol>
 <h2 id="learn-more">Learn More<a class="headerlink" href="#learn-more" title="Permanent link">&para;</a></h2>
-<p>Read the <a href=".." title="Overview">Overview</a> to learn how Resourceful can solve common resource
-acquisition problems.</p>
+<p>Read the <a href=".." title="Overview">Overview</a> to learn how Importable can improve the process of
+importing project resources.</p>
 <p>Read the <a href="../api-reference/" title="API Reference">API Reference</a> to learn more about getting started with
-Resourceful, and how to customize its behavior.</p>
+Importable, and how to customize its behavior.</p>
                 
               
               
